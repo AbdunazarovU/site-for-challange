@@ -1,0 +1,106 @@
+body{
+    background-color: #0c122c;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 240px;
+    color: #f2f2f2;
+    
+    .wrapper{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 150px;
+        
+        // FIRST SECTION
+        .site-loader-wrapper{
+            width: 280px;
+            border-radius: 10px 80px 10px 10px;
+            background-color: #1e2c69;
+            padding: 2.2rem;
+            margin-right: 1.8rem;
+            
+            .site-loader{
+                margin-top: 1.8rem;
+                
+                & img{
+                    height: 20px;
+                    width: 20px;
+                    object-fit: contain;
+                    display: inline-block;
+                    padding: .8rem;
+                    border-radius: 10px;
+                    margin-right: 1rem;
+                    background-color: #0e1230;
+                }
+            }
+        }
+        
+        // SECOND SECTION
+        .analize-wrapper{
+            width: 390px;
+            background-color: #1e2c69;
+            padding: 2.2rem;
+            
+            .progress{
+                position: relative;
+                height: 12px;
+                width: 100%;
+                background-color: #0c122c;
+                border-radius: 8px;
+                
+                // FIGURE
+                .position-figure{
+                    position: absolute;
+                    right: 0;
+                    top: -100px;
+                    width: 150px;
+                    padding-bottom: 20px;
+                    overflow: hidden;
+                    
+                    .figure-top{
+                        background-color: #f2f2f2;
+                        color: rgb(29, 28, 28);
+                        padding: 1rem;
+                        border-radius: 8px;
+
+                        & p{
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                    .figure-bottom{
+                        width: 30px;
+                        height: 30px;
+                        background-color: #f2f2f2;
+                        transform: translateX(135px) rotate(45deg);
+                        margin-top: -20px;
+                        
+                    }
+                }
+                
+                .progress-bar{
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 12px;
+                    width: 80%;
+                    background-color: palevioletred;
+                    border-radius: 8px;
+                    
+                    .white-circle{
+                        height: 9px;
+                        width: 9px;
+                        margin-top: 1.5px;
+                        margin-right: 1.5px;
+                        border-radius: 50%;
+                        background-color: #f2f2f2;
+                        z-index: 99;
+                    }
+                }
+            }
+            .start-final-trafic{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
